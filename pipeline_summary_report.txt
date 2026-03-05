@@ -1,0 +1,64 @@
+====================================================================
+  JOB MARKET 2025 — AUTOMATED PIPELINE SUMMARY REPORT
+  Generated : 2026-03-05 21:02:40
+====================================================================
+
+DATA QUALITY AUDIT
+────────────────────────────────────────
+  Input rows         : 1,470
+  Duplicate rows     : 73
+  Quality alerts     : 2
+    • ALERT: 'benefits' has 40.7% nulls (threshold=30.0%)
+    • ALERT: 73 duplicate rows detected
+
+KEY PERFORMANCE INDICATORS
+────────────────────────────────────────
+  Total Listings          : 1,397
+  Open Positions          : 458 (32.8%)
+  Remote Jobs             : 32.6%
+  Avg Salary (USD)        : $3,085,602
+  Median Salary (USD)     : $126,507
+  P90 Salary (USD)        : $365,392
+  Highest Paying Role     : Cloud Architect
+  Highest Paying Industry : Education
+  Most Demanded Role      : ML Engineer
+  Top 5 Skills            : Pytorch, Git, Docker, Tableau, Java
+  Avg Company Rating      : 3.55 / 5.0
+  Avg Applications/Job    : 511
+
+SALARY BY EXPERIENCE LEVEL
+────────────────────────────────────────
+  Director               $ 129,681
+  Unknown                $ 129,681
+  Manager                $ 129,329
+  Lead/Principal         $ 126,507
+  Mid Level              $ 126,507
+  Senior                 $ 125,900
+  Entry Level            $ 123,032
+  Executive              $ 123,032
+
+TOP COMPANIES HIRING
+────────────────────────────────────────
+  amazon                      34 listings
+  Uber                        34 listings
+  Apple                       32 listings
+  salesforce                  32 listings
+  TCS                         32 listings
+
+ANOMALY DETECTION RESULTS
+────────────────────────────────────────
+  salary_3xIQR_outliers               count=  36  action=flagged (retained)
+  applications_99pct_outliers         count=  14  action=flagged (retained)
+  missing_job_id                      count= 204  action=filled with Unknown
+
+OUTPUT ARTEFACTS
+────────────────────────────────────────
+  • job_market_cleaned_auto.csv
+  • kpi_summary.json
+  • salary_aggregation.csv
+  • skills_frequency.csv
+  • anomaly_report.csv
+  • pipeline_summary_report.txt
+  • pipeline.log
+
+====================================================================
